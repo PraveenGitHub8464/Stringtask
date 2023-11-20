@@ -1,0 +1,31 @@
+
+public class StringTask {
+	
+	
+	public static void main(String[] args) {
+		String s="java programming is fun";
+		int wordCount=0;
+		int charCount=0;
+		
+		for(int i=0;i<s.length();i++) {
+			if(s.charAt(i) !=' ') {
+				charCount++;
+			String[] words=s.split(" ");
+			for(String word: words) {
+				//wordCount++;
+				wordCount=words.length;
+				charCount +=word.length();
+			}
+	}
+}
+			System.out.println("char count:"+charCount);
+			System.out.println("word count:"+wordCount);
+			
+		
+		
+
+		
+		
+	}
+
+}
